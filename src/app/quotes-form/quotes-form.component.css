@@ -6,6 +6,8 @@
   color: grey;
 
 }
-.col-md-5 {
-  font-family:  'Anton', sans-serif;
+.col-md-6 {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 20px;
+  padding-left: 2px;
 }
