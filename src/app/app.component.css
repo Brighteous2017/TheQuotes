@@ -1,0 +1,26 @@
+#Title {
+  color: orange;
+  font-size: 3em;
+  margin-top: 20px;
+  font-family: 'Gamja Flower', cursive;
+
+}
+
+#chant {
+  color: black;
+  font-family: 'Gamja Flower', cursive;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.btn btn-submit {
+  color: blue;
+  margin-left: 50px;
+  float: left;
+}
+
+.row {
+  background-color: #bad6dd;
+  margin-left: 70px;
+  margin-right: 70px;
+}
