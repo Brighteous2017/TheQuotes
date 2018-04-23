@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './quotes-form.component.html',
   styleUrls: ['./quotes-form.component.css']
 })
+
 export class QuotesFormComponent implements OnInit {
 
   quotesCount: number;
@@ -24,6 +25,11 @@ export class QuotesFormComponent implements OnInit {
     this.quotesCount=this.quotes.length;
 
   }
+
+  upVote(i){
+    this.quotes[i].upVotes += 1;
+  }
+
 
 
 }

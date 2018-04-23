@@ -19,10 +19,10 @@
   </div>
   <div class="col-md-6">
     <p><strong>This is a list of All Quotes</strong></p>
-    <p class="life-container" *ngFor="let quote of quotes">
+    <p class="life-container" *ngFor="let quote of quotes; let i=index">
       {{ quote }}
       <br><a type="submit" class="btn btn-submit" style="color: red" (click)="deleteQuote()"><strong>Delete</strong></a>
-      <a type="submit" class="btn btn-submit" style="color: purple" (click)="likeQuote()"><strong>Like<i class="far fa-hand-point-right"></i></strong></a>
+      <a type="submit" class="btn btn-submit" style="color: purple" (click)="likeQuote(i)"><strong>Like<i class="far fa-hand-point-right"></i></strong>{{ quote. upVote}}</a>
       <a type="submit" class="btn btn-submit" style="color: brown" (click)="dislikeQuote()"><strong>Dislike</strong></a>
     </p>
   </div>
