@@ -1,9 +1,9 @@
 <div class="row">
   <div class="col-md-0"></div>
-  <div class="col-md-6">
+  <div class="col-md-5">
     <div class="form-group">
       <label for="description">Add a New Quote:</label>
-      <textarea class="form-control" id="newquote" placeholder="Write Your Quote Here..."rows="4" required [(ngModel)]="newQuote"></textarea>
+      <textarea class="form-control" id="newquote" placeholder="Write Quote Here..."rows="3" required [(ngModel)]="newQuote"></textarea>
   <br>
     <div class="form-group">
       <label for="name">Quote by:</label>
@@ -17,7 +17,7 @@
       <a type="submit" class="btn btn-submit" style="color: blue" (click)="addQuote()"><strong>Add Quote</strong></a>
     </div>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-7">
     <p><strong>This is a list of All Quotes</strong></p>
     <p class="life-container" *ngFor="let quote of quotes; let i=index">
       {{ quote }}
