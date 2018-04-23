@@ -2,9 +2,18 @@
   <div class="col-md-0"></div>
   <div class="col-md-6">
     <div class="form-group">
-      <label for="description">Add a New Quote</label>
+      <label for="description">Add a New Quote:</label>
       <textarea class="form-control" id="newquote" placeholder="Write Your Quote Here..."rows="4" required [(ngModel)]="newQuote"></textarea>
   <br>
+    <div class="form-group">
+      <label for="name">Quote by:</label>
+      <input type="text" required class="form-control" id="name">
+    </div>
+  <br>
+    <div class="form-group">
+      <label for="name">Submitted by:</label>
+      <input type="text" required class="form-control" id="name">
+    </div>
       <a type="submit" class="btn btn-submit" style="color: blue" (click)="addQuote()"><strong>Add Quote</strong></a>
     </div>
   </div>
@@ -12,6 +21,9 @@
     <p><strong>This is a list of All Quotes</strong></p>
     <p class="life-container" *ngFor="let quote of quotes">
       {{ quote }}
+      <br><a type="submit" class="btn btn-submit" style="color: red" (click)="deleteQuote()"><strong>Delete</strong></a>
+      <a type="submit" class="btn btn-submit" style="color: purple" (click)="likeQuote()"><strong>Like<i class="far fa-hand-point-right"></i></strong></a>
+      <a type="submit" class="btn btn-submit" style="color: brown" (click)="dislikeQuote()"><strong>Dislike</strong></a>
     </p>
   </div>
   <div class="col-md-0"></div>

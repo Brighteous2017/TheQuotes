@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuotesFormComponent implements OnInit {
 
-quotesCount: number;
-newQuote: string = ""
-quotes = [];
+  quotesCount: number;
+  newQuote: string = ""
+  quotes = [];
 
   constructor() { }
 
@@ -24,5 +24,6 @@ quotes = [];
     this.quotesCount=this.quotes.length;
 
   }
+
 
 }
