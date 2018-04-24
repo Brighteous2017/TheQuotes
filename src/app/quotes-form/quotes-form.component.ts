@@ -10,6 +10,8 @@ export class QuotesFormComponent implements OnInit {
 
   quotesCount: number;
   newQuote: string = ""
+  newAuthor: string = ""
+  author = [];
   quotes = [];
 
   constructor() { }
@@ -26,10 +28,8 @@ export class QuotesFormComponent implements OnInit {
 
   }
 
-  upVote(i){
-    this.quotes[i].upVotes += 1;
+  addAuthor (){
+    this.author.push(this.newAuthor);
+    this.newAuthor=""
   }
-
-
-
 }

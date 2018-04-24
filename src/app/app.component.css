@@ -12,6 +12,9 @@
   font-family: 'Gamja Flower', cursive;
   font-size: 30px;
   font-weight: lighter;
+  text-align: center;
+  padding-left: 40px;
+  margin-left: 50px;
 }
 
 .btn btn-submit {
